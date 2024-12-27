@@ -1,4 +1,4 @@
 export interface Credenciais{
-    emai: string;
+    email: string;
     senha: string;
 }
