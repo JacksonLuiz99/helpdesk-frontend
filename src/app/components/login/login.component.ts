@@ -20,8 +20,7 @@ export class LoginComponent implements OnInit {
 
   constructor(private toast: ToastrService) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
   logar() {
     this.toast.error('Dados de login inválidos, corrija e tente novamente!', 'Login');
@@ -30,12 +29,7 @@ export class LoginComponent implements OnInit {
   }
 
   validaCampos(): boolean {
-    if(this.email.valid && this.senha.valid){
-      return true;
-    } 
-      else{
-        return false;
-      }
+    return this.email.valid && this.senha.valid
   }
 
 }
